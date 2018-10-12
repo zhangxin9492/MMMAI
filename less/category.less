@@ -1,0 +1,36 @@
+@charset "UTF-8";
+//首先引入外部css
+@import "normalize";
+@import "base";
+@import "common";
+
+//分类
+  .category {
+    border: 1px solid #c8c8c8;
+    a.first {
+      display: block;
+      height: 0.8rem;
+      background-color: #ededed;
+      padding: 0.25rem 0.35rem;
+      font-size: 0.24rem;
+      font-weight: bold;
+      border-bottom:1px solid #c8c8c8;
+      i {
+        display: inline-block;
+        font-size: 20px;
+      }
+    }
+    ul {
+      li.inner {
+        width: 33.33%;
+        height: 0.75rem;
+        line-height: 0.75rem;
+        text-align: center;
+        a.second {
+          display: block;
+          border-bottom: 1px solid #c8c8c8;
+          border-right: 1px solid #c8c8c8;
+        }
+      }
+    }
+  }

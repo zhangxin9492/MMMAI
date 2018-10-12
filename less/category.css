@@ -404,113 +404,30 @@ body {
 .footer p span {
   color: #92918f;
 }
-.mm_nav {
-  margin-top: 0.2rem;
-  background-color: #fff;
-  padding: 0.2rem 0;
+.category {
+  border: 1px solid #c8c8c8;
 }
-.mm_nav li {
-  width: 25%;
-  float: left;
-}
-.mm_nav li a {
+.category a.first {
   display: block;
-  padding-top: 0.25rem;
-}
-.mm_nav li a img {
-  width: 1rem;
-  margin: 0 auto;
-}
-.mm_nav li a p {
-  text-align: center;
-}
-.mm_nav .hide {
-  display: none;
-}
-.mm_recommend {
-  margin-top: 0.05rem;
-  background-color: #fff;
-}
-.mm_recommend .title {
-  background-color: #ff841d;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
-  height: 0.7rem;
-  padding: 0.15rem 0.2rem;
-  line-height: 0.4rem;
-}
-.mm_recommend .title span {
-  color: #fff;
-  font-size: 0.16rem;
-}
-.mm_recommend .title img {
-  width: 0.35rem;
-  margin-top: 0.02rem;
-}
-.mm_recommend .info li {
-  padding: 0.3rem 0.15rem 0.3rem 0.3rem;
-  border-bottom: 1px solid #ccc;
-}
-.mm_recommend .info li a {
-  display: block;
-}
-.mm_recommend .info li a img {
-  width: 100px;
-  height: 100px;
-  float: left;
-}
-.mm_recommend .info li a .detail {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  padding-left: 5px;
-}
-.mm_recommend .info li a .detail p:nth-child(1) {
-  height: 1rem;
-  min-height: 60px;
-}
-.mm_recommend .info li a .detail p:nth-child(1) span {
-  color: #ff9332;
-}
-.mm_recommend .info li a .detail p:nth-child(2) {
-  font-size: 12px;
-  color: #a1a1a1;
-  left: 0;
-  bottom: 30px;
-}
-.mm_recommend .info li a .detail p:nth-child(2) span i {
-  width: 15px;
-  height: 16px;
-  display: inline-block;
-  margin-right: 5px;
-  background: url("../images/comment.svg");
-}
-.moreRecommend {
-  height: 1.1rem;
-  padding: 0.22rem;
-}
-.moreRecommend a {
-  display: block;
-  color: #000;
-  line-height: 0.65rem;
-  text-align: center;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.moreRecommend a i {
-  margin-left: 3px;
-}
-.brand {
-  height: 0.7rem;
-  padding: 0.15rem;
-  background-color: #ff841d;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+  height: 0.8rem;
+  background-color: #ededed;
+  padding: 0.25rem 0.35rem;
   font-size: 0.24rem;
+  font-weight: bold;
+  border-bottom: 1px solid #c8c8c8;
 }
-.brand span {
-  color: #fff;
+.category a.first i {
+  display: inline-block;
+  font-size: 20px;
 }
-.brand img {
-  width: 0.35rem;
-  height: 0.35rem;
+.category ul li.inner {
+  width: 33.33%;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  text-align: center;
+}
+.category ul li.inner a.second {
+  display: block;
+  border-bottom: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
 }

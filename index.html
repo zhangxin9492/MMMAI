@@ -3,11 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
   <div class="container">
-    
+    <div class="mm_header">
+      <div class="logo fl">
+        <a href="#"><img src="./images/header_logo.png" alt=""></a>
+      </div>
+      <div class="appdown fr">
+        <a href="#"><img src="./images/header_app.png" alt=""></a>
+      </div>
+    </div>
+    <div class="mm_search">
+      <input type="text" placeholder="请输入想要比价的商品">
+      <button>搜索</button>
+    </div>
+    <div class="mm_nav">
+      <ul class="clearfix">
+        <!--模板填充-->
+      </ul>
+    </div>
+    <div class="mm_recommend">
+      <div class="title">
+        <span>超级折扣推荐</span>
+        <img src="./images/more.png" alt="" class="fr">
+      </div>
+      <div class="info">
+        <ul>
+          <li>
+            <a href="" class="clearfix">
+              <img src="./images/product.jpg" alt="" class="fl">
+              <div class="detail">
+                <p>移动端凑单品海天县委深仇1.28L<span>10.9元</span></p>
+                <p>京东商城|10-25 14:10<span class="fr"><i></i></span></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="moreRecommend">
+      <a href="moneyctrl.html">更多优惠信息<i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <div class="brand">
+      <span>品牌排行</span>
+      <img src="./images/more.png" alt="" class="fr">
+    </div>
+    <div class="login">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="javascript:;" class="top"><img src="./images/top.jpg">返回顶部</a>
+    </div>
+    <div class="footer">
+      <p>
+        <a href="javascript:;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        <span> -- 掌上比价平台</span>
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
   </div>
+  <script type="template" id="navTmp">
+    {{each result v i}}
+    <li class="{{i>7?'hide':''}}">
+      <a href="{{v.titlehref}}" class="{{i==7?'more':''}}">
+        {{@v.img}}
+        <p>{{v.name}}</p>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+  <script type="text/template" id="productTmp">
+    {{each result v i}}
+    <li>
+      <a href="" class="clearfix">
+        {{@v.productImg2}}
+        <div class="detail">
+          <p>{{v.productName}}<span>{{v.productPinkage}}</span></p>
+          <p>{{v.productFrom}}|{{v.productTime}}<span class="fr"><i></i>{{v.productComCount.substr(1,1)}}</span></p>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
