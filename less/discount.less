@@ -1,3 +1,4 @@
+@charset "UTF-8";
 //引入外部css
 @import "normalize";
 @import "base";
@@ -30,11 +31,15 @@
   .title {
     padding: 0.2rem;
     h3 {
-      line-height: 0.8rem;
+      line-height: 0.5rem;
+    }
+    .price {
+      color: @mainColor;
     }
     .author {
       color: #999;
       font-size: 12px;
+      margin: 0.3rem 0;
       .time {
         margin: 0 0.15rem;
       }
@@ -45,7 +50,7 @@
   }
   .info {
     padding: 0.2rem;
-    img {
+    .smImg {
       width: 2.6rem;
       height: 2.6rem;
       float: right;
@@ -58,7 +63,7 @@
     }
   }
   .img {
-    text-align: center;
+    padding: 0.2rem;
     img {
       width: 5.0rem;
       display: inline-block;
@@ -126,6 +131,7 @@
         height: 1.38rem;
         width: 100%;
         border-radius: 5px;
+        text-indent: 5px;
       }
       input {
         width: 2rem;
@@ -164,9 +170,8 @@
       .con {
         overflow: hidden;
         padding-left: 0.3rem;
-        padding-top: 0.1rem;
         .name {
-          min-height: 0.5rem;
+          min-height: 1.0rem;
           .username {
             width: 50%;
             float: left;
@@ -183,7 +188,6 @@
         .content img {
           display:inline-block;
           width: 22px;
-          vertical-align: bottom;
         }
       }
     }

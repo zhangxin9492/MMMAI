@@ -223,6 +223,18 @@ img {
   display: block;
   width: 100%;
 }
+.txt-cut2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 @media screen and (min-width: 320px) {
   html {
     font-size: 42.66666667px;
@@ -526,7 +538,7 @@ body {
   font-size: 0;
 }
 .product .allComments .form textarea {
-  height: 1.4rem;
+  height: 1.38rem;
   width: 100%;
   border-radius: 5px;
 }
@@ -565,9 +577,10 @@ body {
 .product .allComments .list .con {
   overflow: hidden;
   padding-left: 0.3rem;
+  padding-top: 0.1rem;
 }
 .product .allComments .list .con .name {
-  min-height: 30px;
+  min-height: 0.5rem;
 }
 .product .allComments .list .con .name .username {
   width: 50%;
@@ -584,4 +597,5 @@ body {
 .product .allComments .list .con .content img {
   display: inline-block;
   width: 22px;
+  vertical-align: bottom;
 }
