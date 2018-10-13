@@ -1,0 +1,98 @@
+//引入外部css
+@import "normalize";
+@import "base";
+@import "common";
+.mm_header {
+   .back {
+     width: 1rem;
+     height: 1rem;
+     text-align: center;
+     a {
+       display: block;
+       i {
+         display: inline-block;
+         font-size: 0.6rem;
+         line-height: 1rem;
+         color: #fff;
+       }
+     }
+   }
+   .logo {
+     overflow: hidden;
+     text-align: center;
+     color: #fff;
+     line-height: 1rem;
+     font-size: 0.3rem;
+   }
+ }
+//产品区域
+.product {
+  background-color: #fff;
+  li {
+    padding: 0.3rem 0.15rem 0.3rem 0.3rem;
+    border-bottom: 1px solid #ccc;
+    a{
+      display: block;
+      img {
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+      .detail {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-left: 5px;
+        p:nth-child(1) {
+          height: 1rem;
+          min-height: 60px;
+          span {
+            color: #ff9332;
+          }
+        }
+        p:nth-child(2) {
+          font-size: 12px;
+          color: #a1a1a1;
+          left: 0;
+          bottom: 30px;
+          line-height: 0.2rem;
+          span {
+            i {
+              width: 15px;
+              height: 16px;
+              display: inline-block;
+              margin-right: 5px;
+              background: url("../images/comment.svg");
+            }
+          }
+        }
+      }
+    }
+  }
+  //分页
+  .info_footer {
+    height: 0.9rem;
+    padding: 0.25rem 0.4rem 0;
+    background-color: #fff;
+    text-align: center;
+    a {
+      border: none;
+      height: 0.60rem;
+      width: 1.6rem;
+      line-height: 0.55rem;
+      text-align: center;
+      display: inline-block;
+      background-color: #d4d4d4;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+      box-shadow: 0 0 1px #666;
+      box-sizing: border-box;
+      border-bottom:1px solid #bababa;
+      overflow: hidden;
+    }
+    select {
+      width: 1.5rem;
+      height: 0.60rem;
+      background-color: #fff;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 /**
  * Created by zhangxin on 2018/10/12.
  */
-$(function(){
+  var allPage;
   var url = decodeURI(location.href);
-  console.log(url);
+  var page = 1;
   var categoryId = getUrl('categoryid');
   var category = decodeURI(getUrl('category'));
   function render(page){
@@ -17,9 +17,10 @@ $(function(){
       dataType:'json',
       success:function(info){
         info.category = category;
-        var allPage = Math.ceil(info.totalCount/info.pagesize);
+        allPage = Math.ceil(info.totalCount/info.pagesize);
         info.allPage = allPage;
         info.location = url;
+        info.page = page || 1;
         console.log(info);
         var str = template('listTmp',info);
         $('.product').html(str);
@@ -27,7 +28,21 @@ $(function(){
     })
   }
   render()
-  $('#selected').on('change',function(){
-    console.log(1);
-  })
+ $('.product').on('change','#selection',function(){
+   page = $(this).val();
+   render(page);
+ })
+
+$('.product').on('click','.before',function(){
+  if (page <= 1) {
+    return;
+  }
+  page--;
+  render(page);
 })
+$('.product').on('click','.next',function(){
+  page++;
+  render(page);
+})
+
+
