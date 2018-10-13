@@ -1,0 +1,144 @@
+//首先引入外部css
+@import "normalize";
+@import "base";
+@import "common";
+//产品详情
+.productDetail {
+  .title {
+    height: 0.75rem;
+    padding: 0.1rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    line-height: 0.55rem;
+    a {
+      color: #000;
+    }
+    span {
+      color: #000;
+    }
+    a.select {
+      width: 1.2rem;
+      display: block;
+      height: 100%;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+      background-color: #d0d0d0;
+      box-shadow: 0 1px 2px #888;
+      border-radius: 5px;
+      line-height: 0.55rem;
+      text-align: center;
+    }
+  }
+  .info {
+    background-color: #fff;
+    .productname {
+      padding: 0.3rem;
+      text-align: center;
+      font-size: 18px;
+      height: 1.8rem;
+    }
+    img {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto;
+    }
+    .list {
+      height: 0.6rem;
+      border-bottom: 1px solid #c54500;
+      border-top: 1px solid #c54500;
+      a {
+        width: 33.33%;
+        display: block;
+        border-right: 1px solid #c54500;
+        float: left;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        line-height: 0.6rem;
+      }
+      a:nth-child(1) {
+        background-color: #ff9d1e;
+      }
+      a:nth-child(2) {
+        background-color: #ffc831;
+      }
+      a:nth-last-child(1) {
+        border-right: none;
+        background-color: #ffc831;
+      }
+    }
+    table td.red {
+      color: #d10311;
+      text-align: right;
+      padding-right: 0.2rem;
+    }
+    table {
+      a {
+        display: block;
+        padding: 0.3rem 0;
+      }
+    }
+    a>img {
+      width: 0.33rem;
+      height: 0.33rem;
+    }
+    .actention {
+      border-top: 1px solid #ccc;
+      line-height: 0.45rem;
+      padding: 0.15rem 0.25rem;
+      color: #888;
+      font-size: 0.16rem;
+    }
+  }
+}
+//评论
+.comment {
+  .headline {
+    h3 {
+      border-top: 0.05rem solid #656565;
+      text-align: center;
+      line-height: 0.7rem;
+      height: 0.75rem;
+      background-color: #dbdbdb;
+      font-size: 0.24rem;
+    }
+  }
+  .content {
+    background-color: #fff;
+    li{
+      border-bottom:1px solid #d0d0d0;
+      padding: 0.3rem;
+      p:nth-child(1) {
+        color: #999;
+        line-height: 0.45rem;
+      }
+      p:nth-child(2) {
+        color: #999;
+        line-height: 0.4rem;
+        text-align: right;
+        margin-bottom: 0.1rem;
+      }
+      p:nth-child(3) {
+        line-height: 0.4rem;
+        color: #000;
+      }
+    }
+    .more {
+      height: 1.5rem;
+      padding: 0.35rem 0.15rem;
+      a {
+        display: block;
+        background-color: #d4d4d4;
+        text-align: center;
+        line-height: 0.8rem;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+        box-shadow: 0 0 1px #666;
+        font-size: 0.24rem;
+        color: #000;
+      }
+    }
+  }
+}
+.login {
+  margin-top: 0;
+}

@@ -1,0 +1,83 @@
+//首先引入外部css
+@import "normalize";
+@import "base";
+@import "common";
+
+.product {
+  .title {
+    height: 0.75rem;
+    padding: 0.1rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    line-height: 0.55rem;
+    a {
+      color: #000;
+    }
+    span {
+      color: #000;
+    }
+    a.select {
+      width: 1.2rem;
+      display: block;
+      height: 100%;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+      background-color: #d0d0d0;
+      box-shadow: 0 1px 2px #888;
+      border-radius: 5px;
+      line-height: 0.55rem;
+      text-align: center;
+    }
+  }
+  .info {
+    li {
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      img {
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+      .detail {
+        overflow: hidden;
+        padding-left: 5px;
+        p:nth-child(1) {
+          min-height: 46px;
+        }
+        p:nth-child(2) {
+          color: #e72b00;
+          font-size: 18px;
+        }
+        p:nth-child(3) {
+          color: #9b9e9a;
+        }
+    }
+    }
+  }
+  .info_footer {
+    height: 0.9rem;
+    padding: 0.25rem 0.4rem 0;
+    background-color: #fff;
+    text-align: center;
+    a {
+      border: none;
+      height: 0.60rem;
+      width: 1.6rem;
+      line-height: 0.55rem;
+      text-align: center;
+      display: inline-block;
+      background-color: #d4d4d4;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+      box-shadow: 0 0 1px #666;
+      box-sizing: border-box;
+      border-bottom:1px solid #bababa;
+      overflow: hidden;
+    }
+    select {
+      width: 1.5rem;
+      height: 0.60rem;
+      background-color: #fff;
+    }
+  }
+}
