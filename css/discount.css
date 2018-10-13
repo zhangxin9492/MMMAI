@@ -440,67 +440,165 @@ body {
 .product {
   background-color: #fff;
 }
-.product li {
-  padding: 0.3rem 0.15rem 0.3rem 0.3rem;
-  border-bottom: 1px solid #ccc;
+.product .title {
+  padding: 0.2rem;
 }
-.product li a {
+.product .title h3 {
+  line-height: 0.5rem;
+}
+.product .title .price {
+  color: #ff841d;
+}
+.product .title .author {
+  color: #999;
+  font-size: 12px;
+  margin: 0.3rem 0;
+}
+.product .title .author .time {
+  margin: 0 0.15rem;
+}
+.product .title .author .tips {
+  margin-right: 0.15rem;
+}
+.product .info {
+  padding: 0.2rem;
+}
+.product .info .smImg {
+  width: 2.6rem;
+  height: 2.6rem;
+  float: right;
+}
+.product .info p {
+  line-height: 0.4rem;
+  padding-right: 0.2rem;
+  font-size: 0.24rem;
+  color: #606060;
+}
+.product .img {
+  padding: 0.2rem;
+}
+.product .img img {
+  width: 5.0rem;
+  display: inline-block;
+}
+.product ul#disstorck {
+  width: 2.8rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 0.2rem;
+}
+.product ul#disstorck li {
+  text-align: right;
+  border-bottom: 1px dotted #c0c0c0;
+  height: 0.35rem;
+}
+.product ul#disstorck li a {
   display: block;
+  padding: 0 0.2rem;
+  height: 100%;
 }
-.product li a img {
-  width: 100px;
-  height: 100px;
+.product ul#disstorck li a span {
+  text-align: left;
+}
+.product ul#disstorck strong {
+  color: #f79355;
+  margin-left: 1.0rem;
+  text-align: right;
+}
+.product .buy {
+  height: 1.4rem;
+  padding: 0.4rem 0.3rem;
+}
+.product .buy a {
+  display: block;
+  height: 100%;
+  line-height: 0.6rem;
+  text-align: center;
+  background-color: #ff9000;
+  color: #fff;
+  font-size: 0.24rem;
+  border-radius: 6px;
+}
+.product .ewm {
+  margin-top: 0.4rem;
+  padding: 0 0.2rem;
+}
+.product .allComments {
+  margin-top: 0.2rem;
+  padding: 0.3rem;
+}
+.product .allComments .tit {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0.3rem;
+}
+.product .allComments .form {
+  height: 2.2rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 0;
+}
+.product .allComments .form textarea {
+  height: 1.38rem;
+  width: 100%;
+  border-radius: 5px;
+  text-indent: 5px;
+}
+.product .allComments .form input {
+  width: 2rem;
+  height: 0.80rem;
+  background-color: #ff841d;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.24rem;
+}
+.product .allComments .list li {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.product .allComments .list li ::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.product .allComments .list .userimg {
+  width: 1rem;
   float: left;
 }
-.product li a .detail {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  padding-left: 5px;
-}
-.product li a .detail p:nth-child(1) {
+.product .allComments .list .userimg img {
+  width: 1rem;
   height: 1rem;
-  min-height: 60px;
+  border-radius: 50%;
 }
-.product li a .detail p:nth-child(1) span {
-  color: #ff9332;
-}
-.product li a .detail p:nth-child(2) {
-  font-size: 12px;
-  color: #a1a1a1;
-  left: 0;
-  bottom: 30px;
-  line-height: 0.2rem;
-}
-.product li a .detail p:nth-child(2) span i {
-  width: 15px;
-  height: 16px;
-  display: inline-block;
-  margin-right: 5px;
-  background: url("../images/comment.svg");
-}
-.product .info_footer {
-  height: 0.9rem;
-  padding: 0.25rem 0.4rem 0;
-  background-color: #fff;
-  text-align: center;
-}
-.product .info_footer a {
-  border: none;
-  height: 0.60rem;
-  width: 1.6rem;
-  line-height: 0.55rem;
-  text-align: center;
-  display: inline-block;
-  background-color: #d4d4d4;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
-  box-shadow: 0 0 1px #666;
-  box-sizing: border-box;
-  border-bottom: 1px solid #bababa;
+.product .allComments .list .con {
   overflow: hidden;
+  padding-left: 0.3rem;
 }
-.product .info_footer select {
-  width: 1.5rem;
-  height: 0.60rem;
-  background-color: #fff;
+.product .allComments .list .con .name {
+  min-height: 1.0rem;
+}
+.product .allComments .list .con .name .username {
+  width: 50%;
+  float: left;
+  color: #87c3ed;
+}
+.product .allComments .list .con .name .time {
+  width: 50%;
+  float: left;
+  text-align: right;
+  color: #999;
+  font-size: 12px;
+}
+.product .allComments .list .con .content img {
+  display: inline-block;
+  width: 22px;
 }

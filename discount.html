@@ -6,7 +6,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/moneyProduct.css">
+  <link rel="stylesheet" href="./css/discount.css">
 </head>
 <body>
 <div class="container">
@@ -44,15 +44,17 @@
 <script type="text/template" id="moneyProductTmp">
   <div class="title">
     <h3>{{result[0].productName}}</h3>
+    <p class="price">{{result[0].productPrice}}</p>
     <div class="author">{{result[0].productFrom}}<span class="time">{{result[0].productTime}}</span><span class="tips">{{result[0].productTips}}</span>{{result[0].productComCount}}</div>
   </div>
   <div class="info">
-    {{@result[0].productImgSm}}
-    <p>{{@result[0].productInfo2}}</p>
+    <div class="smImg">
+      <img src="./images/xx.jpg" alt="">
+    </div>
+    <p>{{@result[0].productInfo}}</p>
 
   </div>
-  <div class="img" style="text-align: center">{{@result[0].productImg2}}</div>
-  {{@result[0].productCity}}
+  <div class="img">{{@result[0].productImg}}</div>
   <div class="buy">
     <a href="#">前往购买</a>
   </div>
@@ -66,6 +68,6 @@
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/moneyProduct.js"></script>
+<script src="./js/discount.js"></script>
 </body>
 </html>

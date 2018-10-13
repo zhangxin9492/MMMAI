@@ -41,13 +41,12 @@ textarea {
   line-height: 0;
   clear: both;
 }
-
 img {
   display: block;
   width: 100%;
 }
 .txt-cut2 {
-  overflow : hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
