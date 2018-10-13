@@ -45,8 +45,6 @@ img {
   display: block;
   width: 100%;
 }
-<<<<<<< HEAD
-=======
 .txt-cut2 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -59,4 +57,3 @@ img {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
->>>>>>> discount

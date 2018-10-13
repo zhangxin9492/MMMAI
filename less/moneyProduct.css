@@ -535,12 +535,12 @@ body {
   width: 100%;
   border-radius: 5px;
   text-align: right;
-  font-size: 0;
 }
 .product .allComments .form textarea {
   height: 1.38rem;
   width: 100%;
   border-radius: 5px;
+  vertical-align: top;
 }
 .product .allComments .form input {
   width: 2rem;
@@ -552,6 +552,7 @@ body {
   border: none;
   border-radius: 4px;
   font-size: 0.24rem;
+  vertical-align: top;
 }
 .product .allComments .list li {
   margin-top: 20px;

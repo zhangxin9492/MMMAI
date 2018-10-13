@@ -11,7 +11,8 @@ $(function(){
       productid:productId
     },
     success:function(info){
-      console.log(info);
+      console.log(info.result[0].productComment);
+
       var str = template('moneyProductTmp',info);
       $('.product').html(str);
     }
