@@ -39,8 +39,43 @@
     li {
       a {
         display: block;
+        padding:10px;
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+        position: relative;
         img {
           width: 2rem;
+          float: left;
+        }
+        .info {
+          overflow: hidden;
+          padding-left: 10px;
+          .name {
+            color: #333;
+
+          }
+          .price {
+            color: #000;
+            font-weight: bold;
+            margin-top: 0.05rem;
+
+          }
+          .time {
+            color: #EE7700;
+            margin-top: 0.3rem;
+          }
+        }
+        i {
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          line-height: 30px;
+          text-align: center;
+          font-size: 30px;
+          color: #999;
         }
       }
     }

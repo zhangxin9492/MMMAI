@@ -332,7 +332,7 @@ body {
   display: block;
   width: 1rem;
   height: 1rem;
-  padding-top: 0.1rem;
+  padding-top: 0.10rem;
 }
 .mm_header .appdown a img {
   width: 0.75rem;
@@ -376,7 +376,7 @@ body {
   display: block;
   float: left;
   height: 100%;
-  line-height: 0.65rem;
+  line-height: 0.65rem ;
   text-align: center;
 }
 .login a img {
@@ -416,9 +416,6 @@ body {
 .footer p span {
   color: #92918f;
 }
-.mm_header {
-  background-color: #f4483e;
-}
 .mm_header .back {
   width: 1rem;
   height: 1rem;
@@ -440,52 +437,156 @@ body {
   line-height: 1rem;
   font-size: 0.3rem;
 }
-.product {
-  background-color: #fff;
-}
 .product .title {
-  height: 0.7rem;
-  line-height: 0.7rem;
-  text-align: center;
-  color: #999;
-  font-size: 12px;
-}
-.product .content li a {
-  display: block;
-  padding: 10px;
-  overflow: hidden;
-  border-bottom: 1px solid #ccc;
+  background-color: #fff;
   position: relative;
+  border-bottom: 1px solid #ccc;
 }
-.product .content li a img {
-  width: 2rem;
+.product .title .shop {
+  width: 30%;
   float: left;
+  height: 0.6rem;
 }
-.product .content li a .info {
-  overflow: hidden;
-  padding-left: 10px;
+.product .title .shop a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.24rem;
 }
-.product .content li a .info .name {
-  color: #333;
-}
-.product .content li a .info .price {
-  color: #000;
-  font-weight: bold;
-  margin-top: 0.05rem;
-}
-.product .content li a .info .time {
-  color: #EE7700;
-  margin-top: 0.3rem;
-}
-.product .content li a i {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  line-height: 30px;
+.product .title .shop a span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 0.6rem;
   text-align: center;
-  font-size: 30px;
-  color: #999;
+}
+.product .title .shop a span i {
+  vertical-align: middle;
+}
+.product .title .shop a ul {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0.61rem;
+  background-color: #fff;
+  display: none;
+}
+.product .title .shop a ul li {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border-bottom: 1px solid #dadada;
+  padding-left: 0.1rem;
+}
+.product .title .area {
+  width: 30%;
+  float: left;
+  height: 0.6rem;
+}
+.product .title .area a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.24rem;
+}
+.product .title .area a span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.product .title .area a span i {
+  vertical-align: middle;
+}
+.product .title .area a ul {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0.61rem;
+  background-color: #fff;
+  display: none;
+}
+.product .title .area a ul li {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border-bottom: 1px solid #dadada;
+  padding-left: 0.1rem;
+}
+.product .title .allPrice {
+  width: 30%;
+  float: left;
+  height: 0.6rem;
+}
+.product .title .allPrice a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.24rem;
+}
+.product .title .allPrice a span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.product .title .allPrice a span i {
+  vertical-align: middle;
+}
+.product .title .allPrice a ul {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0.61rem;
+  background-color: #fff;
+  display: none;
+}
+.product .title .allPrice a ul li {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border-bottom: 1px solid #dadada;
+  padding-left: 0.1rem;
+}
+.product .content ul {
+  margin-top: 8px;
+  background-color: #f1f1f1;
+  padding: 0 6px;
+}
+.product .content ul li {
+  width: 50%;
+  float: left;
+  margin-bottom: 5px;
+}
+.product .content ul li a {
+  display: block;
+  background-color: #fff;
+  padding-left: 2px;
+}
+.product .content ul li a img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+.product .content ul li a .name {
+  margin: 3px 0;
+}
+.product .content ul li a .price {
+  margin-bottom: 5px;
+}
+.product .content ul li a .price span {
+  color: #ff841d;
+  font-size: 24px;
+}
+.product .content ul li a .price button {
+  background-color: #ff841d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+.product .content ul li:nth-child(2n+1) {
+  padding-right: 3px;
+}
+.product .content ul li:nth-child(2n) {
+  padding-left: 3px;
 }

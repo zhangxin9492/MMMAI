@@ -12,6 +12,7 @@ $(function(){
     dataType:'json',
     success:function(info){
       console.log(info)
+      info.src= $('.product li img').attr('src');
       var str = template('contentTmp',info);
       $('.product .content').html(str);
     }
