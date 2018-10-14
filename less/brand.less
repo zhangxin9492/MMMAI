@@ -1,0 +1,209 @@
+//首先引入外部css
+@import "normalize";
+@import "base";
+@import "common";
+
+.product {
+  .title {
+    height: 0.75rem;
+    padding: 0.1rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    line-height: 0.55rem;
+    a {
+      color: #000;
+    }
+    span {
+      color: #000;
+    }
+    a.select {
+      width: 1.2rem;
+      display: block;
+      height: 100%;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+      background-color: #d0d0d0;
+      box-shadow: 0 1px 2px #888;
+      border-radius: 5px;
+      line-height: 0.55rem;
+      text-align: center;
+    }
+  }
+  .content {
+    .praise {
+      .headline {
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #874604;
+        font-size: 0.24rem;
+        padding-left: 0.2rem;
+        border-bottom: 1px solid #ccc;
+      }
+      ul {
+        background-color: #fff;
+        li {
+          height: 1.3rem;
+          padding: 0.2rem 0.1rem 0.2rem 0.2rem;
+          border-bottom: 1px solid #ccc;
+          a {
+            display: block;
+            position: relative;
+            .num {
+              width: 0.4rem;
+              height: 0.4rem;
+              line-height: 0.4rem;
+              text-align: center;
+              color: #fff;
+              background-color: #c9c9c9;
+            }
+            .num.red {
+              background-color: #f10e0e;
+            }
+            .num.orange {
+              background-color: #ff9314;
+            }
+            .num.green {
+              background-color: #8adf5b;
+            }
+            .info {
+              overflow: hidden;
+              padding-left: 0.2rem;
+              .name {
+                line-height: 0.4rem;
+                font-size: 0.24rem;
+              }
+              .sell {
+                line-height: 0.35rem;
+                font-size: 0.20rem;
+                color: #999;
+              }
+            }
+            .arrow-right {
+              width: 0.4rem;
+              height: 0.4rem;
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform: translateY(-50%);
+              i {
+                line-height: 0.4rem;
+                vertical-align: middle;
+                text-align: center;
+                font-size: 0.4rem;
+                color: #999;
+              }
+            }
+          }
+        }
+      }
+    }
+    .volume {
+      .headline {
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #874604;
+        font-size: 0.24rem;
+        padding-left: 0.2rem;
+        border-bottom: 1px solid #ccc;
+      }
+      ul {
+        background-color: #fff;
+        li {
+          a {
+            display: block;
+            padding: 0.2rem;
+            border-bottom: 1px solid #ccc;
+            img {
+              width: 2rem;
+              height: 2rem;
+              float: left;
+            }
+            .info {
+              overflow: hidden;
+              padding-left: 0.2rem;
+              .name{
+                line-height: 0.4rem;
+                min-height: 0.8rem;
+                font-size: 0.24rem;
+              }
+              .price {
+                color: #e3171f;
+                margin-bottom: 0.2rem;
+                margin-top: 0.2rem;
+                font-size: 0.3rem;
+              }
+              .pl {
+                color: #999;
+                font-size: 0.2rem;
+                span:nth-child(1) {
+                  margin-right: 0.1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .coments {
+      .headline {
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #874604;
+        font-size: 0.24rem;
+        padding-left: 0.2rem;
+        border-bottom: 1px solid #ccc;
+      }
+      ul {
+        li {
+          padding: 0.2rem;
+          background-color: #fff;
+          border-top: 1px solid #ccc;
+          .top {
+            img {
+              width: 2rem;
+              height: 2rem;
+              float: left;
+            }
+            .name {
+              overflow: hidden;
+              color: #999;
+              padding-left: 0.2rem;
+              font-size: 0.22rem;
+            }
+          }
+          .bot {
+            position: relative;
+            padding: 0.2rem;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            margin-top: 0.2rem;
+            .username {
+              margin-bottom: 0.2rem;
+              span:nth-child(1) {
+                color: #847f46;
+              }
+              span:nth-child(2) {
+                color: #999;
+              }
+            }
+            .txt {
+              font-size: 0.22rem;
+              color: #000;
+            }
+            .triangle {
+              width: 15px;
+              height: 15px;
+              background-color: #f8f8f8;
+              border-top: 1px solid #ccc;
+              border-left: 1px solid #ccc;
+              transform: rotate(45deg);
+              position: absolute;
+              left: 15%;
+              top: -9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
