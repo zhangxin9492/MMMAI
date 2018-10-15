@@ -9,6 +9,20 @@ $(function(){
     success:function(info){
       var str = template('titleTmp',info);
       $('.product .title').html(str);
+      //改变ul的高度
+      function resize() {
+        var $li = $('.title ul li');
+        var width = 0;
+        $li.each(function(i,v){
+          width += Math.ceil($(v).outerWidth(true));
+        })
+        $('.title ul').width(width);
+      }
+      resize();
+      window.onresize = function(){
+        //当屏幕宽度发生改变时再次改变ul的宽度
+        resize();
+      }
     }
   })
 

@@ -58,7 +58,7 @@
   <ul>
     {{each result v i}}
     <li>
-      <a href="productList.html?categoryid={{v.categoryId}}">
+      <a href="productList.html?categoryid={{v.categoryId}}&category={{category}}">
         <div class="num fl {{i==0?'red':''}} {{i==1?'orange':''}} {{i==2?'green':''}}">{{i+1}}</div>
         <div class="info">
           <p class="name">{{v.brandName}}</p>

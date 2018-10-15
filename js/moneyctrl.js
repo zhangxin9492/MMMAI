@@ -2,14 +2,14 @@
  * Created by zhangxin on 2018/10/13.
  */
 $(function(){
-  var page = 1;
+  var page = 0;
   function render(page){
     $.ajax({
       url:'http://127.0.0.1:9090/api/getmoneyctrl',
       type:'get',
       dataType:'json',
       data:{
-        pageid:page||1
+        pageid:page||0
       },
       success:function(info){
         console.log(info);
@@ -29,7 +29,7 @@ $(function(){
   })
 
   $('.product').on('click','.before',function(){
-    if (page <= 1) {
+    if (page <= 0) {
       return;
     }
     page--;

@@ -12,8 +12,21 @@ $(function(){
     type:'get',
     dataType:'json',
     success:function(info){
-      var str = template('praiseTmp',info);
-      $('.product .praise').html(str);
+      var id = info.result[0].categoryId;
+      //根据分类id获取分类名称
+      $.ajax({
+        url:'http://127.0.0.1:9090/api/getcategorybyid',
+        type:'get',
+        data:{
+          categoryid:id,
+        },
+        success:function(data) {
+          var category = data.result[0].category;
+          info.category = category;
+          var str = template('praiseTmp',info);
+          $('.product .praise').html(str);
+        }
+      })
     }
   })
 //  渲染品牌销量排行
@@ -26,7 +39,6 @@ $(function(){
     },
     dataType:'json',
     success:function(info){
-      console.log(info)
       var str = template('volumeTmp',info);
       $('.product .volume').html(str);
       var img = info.result[0].productImg;
@@ -38,7 +50,6 @@ $(function(){
         data:{productid:productid},
         dataType:'json',
         success:function(data){
-          console.log(data);
           data.img = img;
           data.productName = productName;
           var str = template('comentTmp',data);

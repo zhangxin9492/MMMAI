@@ -6,6 +6,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="./css/couponproduct.css">
 </head>
 <body>
@@ -45,12 +46,19 @@
     </p>
     <p>m.manmanbuy.com</p>
   </div>
+  <div class="madel">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+      </div>
+      </div>
+  </div>
 </div>
 <script type="text/template" id="contentTmp">
   <ul>
     {{each result v i}}
     <li>
-      <a href="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg">
+      <a href="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg" data-id="{{v.couponProductId}}">
         {{@v.couponProductImg}}
         <div class="info">
           <p class="txt-cut2 name">{{v.couponProductName}}</p>
@@ -63,8 +71,20 @@
     {{/each}}
   </ul>
 </script>
+<script type="text/template" id="slideTmp">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {{each result v i}}
+        <div class="swiper-slide">{{@v.couponProductImg}}</div>
+        {{/each}}
+      </div>
+      <div class="swiper-button-prev swiper-button-black"></div><!--左箭头-->
+      <div class="swiper-button-next swiper-button-black"></div><!--右箭头-->
+    </div>
+</script>
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
+<script src="./lib/swiper/js/swiper.min.js"></script>
 <script src="./js/common.js"></script>
 <script src="./js/couponproduct.js"></script>
 </body>

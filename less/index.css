@@ -235,6 +235,10 @@ img {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+i,
+em {
+  font-style: normal;
+}
 @media screen and (min-width: 320px) {
   html {
     font-size: 42.66666667px;

@@ -15,7 +15,6 @@ $(function(){
       },
       dataType:'json',
       success:function(info){
-        console.log(info);
         var str = template('contentTmp',info);
         $('.product .content').html(str);
       }
@@ -45,14 +44,20 @@ $(function(){
 
   //  标题点击显示隐藏
   $('.title .shop').click(function(){
+    $(this).find('i').toggleClass('fa-caret-up').toggleClass('fa-caret-down');
+    $(this).siblings().find('i').removeClass('fa-caret-down').addClass('fa-caret-up');
     $(this).find('ul').toggle();
     $(this).siblings().find('ul').hide();
   })
   $('.title .area').click(function(){
+    $(this).find('i').toggleClass('fa-caret-up').toggleClass('fa-caret-down');
+    $(this).siblings().find('i').removeClass('fa-caret-down').addClass('fa-caret-up');
     $(this).find('ul').toggle().siblings().find('ul').hide();
     $(this).siblings().find('ul').hide();
   })
   $('.title .allPrice').click(function(){
+    $(this).find('i').toggleClass('fa-caret-up').toggleClass('fa-caret-down');
+    $(this).siblings().find('i').removeClass('fa-caret-down').addClass('fa-caret-up');
     $(this).find('ul').toggle().siblings().find('ul').hide();
     $(this).siblings().find('ul').hide();
   })
@@ -60,10 +65,14 @@ $(function(){
 //点击渲染页面
   $('.product .title').on('click','.shop ul li',function(){
     shopid = $(this).data('id');
+    var txt = $(this).text();
+    $(this).parent().siblings().find('em').text(txt);
     render(shopid,areaid);
   })
   $('.product .title').on('click','.area ul li',function(){
     areaid = $(this).data('id');
+    var txt = $(this).text().substr(0,2)
+    $(this).parent().siblings().find('em').text(txt);
     render(shopid,areaid);
   })
 })
